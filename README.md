@@ -33,7 +33,7 @@
 ![前台创享课程](./doc_images/course.png)
 
 - 新闻资讯
-![前台新闻资讯](.doc_images/new.png)
+![前台新闻资讯](./doc_images/new.png)
 
 - 关于我们
 ![前台关于我们](./doc_images/about.png)
