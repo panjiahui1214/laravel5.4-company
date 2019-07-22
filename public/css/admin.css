@@ -1,0 +1,256 @@
+/*
+ * 后台专用
+ * add by pjh
+ */
+body {
+	padding: 0;  
+    margin: 0;  
+    height: 100%;
+	background-color: #edefef;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* 顶部栏 */
+.header {
+	width: 100%;
+	height: 53px;
+	color: #fff;
+	background-color: #5189c4;
+	min-width: 1024px;
+}
+
+.top-left {
+	height: 100%;
+	margin-left: 15px;
+}
+
+.top-menu {
+	display: inline-block;
+	margin-left: 15%;
+	margin-top: 20px;
+	font-family: "微软雅黑","宋体";
+}
+
+.top-menu-li {
+	background-color: #417cbb;
+	padding: 5px 10px;
+	border: solid 2px #5e95d0;
+	border-bottom: 0;
+	border-radius: 6px 6px 0 0;
+	margin-right: 10px;
+}
+.top-menu-active {
+	background-color: #edefef;
+}
+.top-menu-active a {
+	color: #5189c4;
+}
+
+.top-right {
+	margin-top: 26px;
+	margin-right: 18px;
+	font-size: 15px;
+	font-family:Arial;
+}
+
+.gang {
+	color: #5e95d0;
+	margin: 0 5px;
+}
+.logout-form {
+	float: right;
+	margin-top: -2px;
+}
+.logout-btn {
+	border: 0;
+	color: #fff;
+	font-size: 14px;
+	background: none;
+}
+
+
+/* 非顶部栏 */
+.content {
+	width: 100%;
+	position: absolute;
+	min-width: 1024px;
+}
+
+/* 左侧栏 */
+.left-menu {
+	width: 160px;
+	background-color: #f7fbfc;
+	border-right: solid 1px #c2d0d9;
+}
+
+.left-menu a {
+	color: #0068a6;
+	font-size: 13px;
+}
+
+.left-menu-one {
+	color: #275d96;
+	margin: 15px;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	border-bottom: solid 1px #d9e4ea;
+}
+.triangle {
+	margin-top: -18px;
+	margin-right: 15px;
+	border-top: 7px solid #b4c3c7;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.left-menu-two {
+	margin: 15px 0 30px 30px;
+}
+.left-menu-two li {
+	margin-bottom: 8px;
+}
+
+.left-menu-active {
+	width: 80px;
+	height: 20px;
+	padding: 5px 22px;
+	background: url(../images/admin/left_menu.png);
+}
+
+/* 右侧框架 */
+.right-all {
+	height: 90%;
+	margin-left: 160px;
+}
+
+.right-title {
+	width: 100px;
+	padding: 3px;
+	margin-left: 36px;
+	background-color: #5189c4;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	font-family: "微软雅黑","宋体";
+}
+
+.right-content {
+	height: 95%;
+	margin-left: 20px;
+	border: solid 1px #c2d0d9;
+	background-color: #fff;
+	padding-bottom: 10px;
+}
+
+
+
+/* 首页子页面 */
+.right-index-title {
+	margin-top: 15px;
+	padding: 6px 20px;
+	border: solid 1px #c2d0d9;
+	font-family: "微软雅黑","宋体";
+}
+
+.right-index-content {
+	margin: 30px 130px;
+}
+
+.right-index-li {
+	height: 50px;
+	text-align: right;
+	padding-right: 100px;
+}
+
+/* 管理员管理子页面 */
+.btn-add {
+	margin: 20px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px #c2d0d9;
+}
+.btn-add a {
+	padding: 8px 5px;
+	font-size: 10px;
+	font-weight: bold;
+	background: url(../images/admin/bnt_bg.png);
+}
+
+.div-table {
+	width: 98%;
+	margin-left: 1%;
+}
+
+.table-all {
+	width: 100%;
+	font-size: 13px;
+	text-align: center;
+	border-collapse: collapse;
+}
+.table-all th {
+	height: 30px;
+}
+.table-all td {
+	padding: 5px;
+}
+.table-all a {
+	color: #000;
+}
+.table-all i {
+	color: red;
+	margin-right: 5px;
+}
+
+.form-click {
+	top: 16%;
+	left: 36%;
+	width: 50%;
+	z-index: 1;
+	font-size: 13px;
+	position: absolute;
+	background-color: #fff;
+	border: solid 2px #cccccc;
+	box-shadow: 8px 8px 8px rgba(0, 0, 0, .3);
+	display: none;
+}
+.form-click div {
+	padding: 8px;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #eaf0f7;
+}
+.form-click td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #cccccc;
+}
+
+.click-td-left {
+	text-align: right;
+	padding-right: 20px;
+}
+
+.admin-close {
+	margin-top: -8px;
+}
+
+.form-submit td {
+	padding: 15px;
+}
+
+.upload-input {
+	width: 68px;
+	opacity: 0;
+	z-index: 100;
+}
+.upload-text {
+	margin-left: -75px;
+}

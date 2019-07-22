@@ -1,0 +1,253 @@
+/*
+ * 前后台共用
+ * add by pjh
+ */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+.blue {
+	color: blue;
+}
+
+.w-gray {
+	color: #aaaaaa;
+}
+.w-white {
+	color: #FFFFFF !important;
+}
+.w-blue {
+	color: #0086da;
+}
+.w-blue a {
+	color: #0086da !important;
+}
+.margin-l5 {
+	margin-left: 5px;
+}
+.margin-l15 {
+	margin-left: 15px;
+}
+.margin-r30 {
+	margin-right: 30px !important;
+}
+.margin-t0 {
+	margin-top: 0 !important;
+}
+.margin-t30 {
+	margin-top: 30px !important;
+}
+.margin-t5 {
+	margin-top: 5px;
+}
+.margin-t10 {
+	margin-top: 10px;
+}
+.margin-b15 {
+	margin-bottom: 15px;
+}
+.margin-b30 {
+	margin-bottom: 30px !important;
+}
+.margin-b60 {
+	margin-bottom: 60px !important;
+}
+.margin-lr10 {
+	margin: 0 10px;
+}
+.margin-lr20 {
+	margin: 0 20px;
+}
+.padding-t15 {
+	padding-top: 15px;
+}
+.padding-t30 {
+	padding-top: 30px !important;
+}
+.padding-b10 {
+	padding-bottom: 10px;
+}
+.padding-l10 {
+	padding-left: 10px;
+}
+.padding-l50 {
+	padding-left: 50px;
+}
+.padding-lr20 {
+	padding: 0 20px;
+}
+
+.border-0 {
+	border: 0;
+}
+
+.height-15 {
+	height: 15px !important;
+}
+.height-80 {
+	height: 80px !important;
+}
+
+.width-90 {
+	width: 90px !important;
+}
+.width-100 {
+	width: 100px !important;
+}
+.width-120 {
+	width: 120px;
+}
+.width-100p {
+	width: 100%;
+}
+.width-95p {
+	width: 95%;
+}
+.width-70p {
+	width: 70%;
+}
+.width-50p {
+	width: 50% !important;
+}
+.width-30p {
+	width: 30%;
+}
+.width-20p {
+	width: 20%;
+}
+.txt-left {
+	text-align: left;
+}
+.txt-center {
+	text-align: center;
+}
+.txt-right {
+	text-align: right;
+}
+.font-s15 {
+	font-size: 15px !important;
+}
+.font-s17 {
+	font-size: 17px;
+}
+.font-s22 {
+	font-size: 22px !important;
+}
+.font-s36 {
+	font-size: 36px !important;
+}
+.font-wb {
+	font-weight: bold;
+}
+
+
+/* 消息提示框 */
+.mes {
+	top: 200px;
+	left: 43%;
+	z-index: 1009;
+	font-weight: bold;
+	position: absolute;
+	background-color: #fff;
+	border: solid 1px #cccccc;
+	box-shadow: 8px 8px 8px rgba(0, 0, 0, .3);
+}
+.mes-title {
+	height: 22px;
+	background-color: #eaf0f7;
+}
+.mes-text {
+	padding: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.mes-sure {
+	margin-left: 40%;
+	margin-bottom: 10px;
+}
+
+.close {
+	width: 28px;
+	height: 18px;
+	background: url(../images/admin/close.gif);
+}
+.close:hover {
+	background-position: 0 -18px;
+}
+
+
+/* 分页 */
+.render {
+	float: right;
+	margin: 15px;
+}
+.render li {
+	float: left;
+	width: 25px;
+	font-weight: bold;
+	text-align: center;
+	border: solid 1px #c2d0d9;
+	background-color: #fff;
+	font-size: 13px;
+	padding: 5px 0;
+}
+.render a, .render .disabled {
+	color: #5189c4;
+}
+.render .active {
+	color: #fff;
+	background-color: #5189c4;
+}
+
+
+/* 表格 */
+.table-blue {
+	border: solid 1px #d5dfe8;
+}
+.table-blue th {
+	background: #eaf0f7;
+}
+
+
+/* 输入表单 */
+.form-input {
+	width: 390px;
+	margin: auto;
+	margin-bottom: 25px;
+}
+.form-input input {
+	width: 220px;
+	padding: 6px;
+	border: solid 1px #ccc;
+}
+.form-input input[type="radio"] {
+	width: 50px;
+}
+.form-input i {
+	color: red;
+	margin-right: 8px;
+	font-weight: bold;
+}
+
+
+@media only screen and (max-width:641px) {
+	.mes {
+		left: 20%;
+	}
+}

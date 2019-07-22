@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script type="text/javascript" src="../internal.js"></script>
+    <style type="text/css">
+        .warp {width: 320px;margin-left:5px;padding: 30px 0 0 15px;position: relative;}
+        #url {width: 290px; margin-bottom: 2px; margin-left: -6px; margin-left: -2px\9;*margin-left:0;_margin-left:0; }
+        .format span{display: inline-block; width: 58px;text-align: center; zoom:1;}
+        table td{padding:5px 0;}
+        #align{width: 65px;height: 23px;line-height: 22px;}
+    </style>
+</head>
+<body>
+<div class="warp">
+        <table width="300" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="format">
+                    <span style="vertical-align: top; padding-top: 25px;">
+                        <!--<var id="lang_input_address"></var>-->
+                        视频通用代码：
+                    </span>
+                    <textarea style="width:230px;" rows="5" id="url"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="format" style="color: red;">
+                    （点击视频播放器下方<strong>“分享”</strong>中的<strong>“复制通用代码”</strong>即可获取）
+                </td>
+            </tr>
+        </table>
+</div>
+<script type="text/javascript"> 
+    var iframe = editor._iframe;
+    if(iframe){
+        $G("url").value = iframe.getAttribute("src") || "";
+    }
+    function queding(){
+        var  url = $G("url").value,
+                newIframe = editor.document.createElement("iframe"),
+                div;
+        if(!url){
+            alert(lang.enterAddress);
+            return false;
+        }
+
+        /*
+         * add by pjh
+         * 截取输入框中<iframe>标签的src属性值
+         */
+        var iframeReg = /<iframe.*?(?:>|\/>)/gi,
+            srcReg = /src=[\'\"]?([^\'\"]*)[\'\"]?/i;
+
+        if (url.match(iframeReg)) {
+            url = url.match(srcReg)[1];
+        }
+        
+        newIframe.setAttribute("src",/http:\/\/|https:\/\//ig.test(url) ? url : "http://"+url);
+        /*
+         * add by pjh 20180809
+         * 给所有插入iframe设置属性
+         */
+        newIframe.setAttribute("frameborder", "0");
+        newIframe.setAttribute("allowfullscreen", true);
+
+        if(iframe){
+            iframe.parentNode.insertBefore(newIframe,iframe);
+            domUtils.remove(iframe);
+        }else{
+            div = editor.document.createElement("div");
+            div.appendChild(newIframe);
+            editor.execCommand("inserthtml", div.innerHTML, true);
+        }
+        editor._iframe = null;
+        dialog.close();
+    }
+    dialog.onok = queding;
+    $G("url").onkeydown = function(evt){
+        evt = evt || event;
+        if(evt.keyCode == 13){
+            queding();
+        }
+    };
+    $focus($G( "url" ));
+</script>
+</body>
+</html>

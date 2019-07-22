@@ -1,0 +1,63 @@
+/*
+ * 注册登录专用
+ * add by pjh
+ */
+body{
+	background-color: #f6f8f9;
+}
+
+/* 登录页面 */
+.lgoio-href a {
+	color: #0086da;
+	font-size: 18px;
+}
+.logio-div {
+	width: 393px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logio-div-h {
+	padding-top: 110px;
+	padding-bottom: 30px;
+}
+
+.logio-center {
+	margin: -3px 0 !important;
+	padding: 20px 25px 0;
+	background: url('../images/admin/login_bg.jpg');
+}
+.logio-center p {
+	margin-bottom: 5px;
+}
+.logio-center .error {
+	width: 220px;
+	margin-left: 100px;
+	margin-bottom: 5px;
+}
+
+.logio-btn {
+	border: 0;
+	width: 393px;
+	height: 58px;
+}
+
+.login-btn {
+	background: url('../images/admin/login-button.jpg');
+}
+.login-btn:hover {
+	background: url('../images/admin/login-button2.jpg');
+}
+
+.register-btn {
+	background: url('../images/admin/register-button.jpg');
+}
+.register-btn:hover {
+	background: url('../images/admin/register-button2.jpg');
+}
+
+.forget-btn {
+	background: url('../images/admin/forget-button.jpg');
+}
+.forget-btn:hover {
+	background: url('../images/admin/forget-button2.jpg');
+}
