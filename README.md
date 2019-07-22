@@ -24,43 +24,43 @@
 # 效果图
 ### 前台
 - 首页
-![前台首页](laravel5.8-blog/doc_images/index.png)
+![前台首页](laravel5.4-company/doc_images/index.png)
 
 - 产品服务（待增加内容，并且后台待增加产品上传功能）
-![前台产品服务](laravel5.8-blog/doc_images/product.png)
+![前台产品服务](laravel5.4-company/doc_images/product.png)
 
 - 创享课程
-![前台创享课程](laravel5.8-blog/doc_images/course.png)
+![前台创享课程](laravel5.4-company/doc_images/course.png)
 
 - 新闻资讯
-![前台新闻资讯](laravel5.8-blog/doc_images/new.png)
+![前台新闻资讯](laravel5.4-company/doc_images/new.png)
 
 - 关于我们
-![前台关于我们](laravel5.8-blog/doc_images/about.png)
+![前台关于我们](laravel5.4-company/doc_images/about.png)
 
 - 活动报名
-![前台活动报名](laravel5.8-blog/doc_images/active.png)
+![前台活动报名](laravel5.4-company/doc_images/active.png)
 
 - 登录
-![前台登录](laravel5.8-blog/doc_images/login.png)
+![前台登录](laravel5.4-company/doc_images/login.png)
 
 - 会员中心
-![前台会员中心](laravel5.8-blog/doc_images/user.png)
+![前台会员中心](laravel5.4-company/doc_images/user.png)
 
 
 ### 后台
 - 登录
-![后台登录](laravel5.8-blog/doc_images/admin_login.png)
+![后台登录](laravel5.4-company/doc_images/admin_login.png)
 
 - 首页
-![后台首页](laravel5.8-blog/doc_images/admin_index.png)
+![后台首页](laravel5.4-company/doc_images/admin_index.png)
 
 - 用户模块
-![后台用户模块](laravel5.8-blog/doc_images/admin_user.png)
+![后台用户模块](laravel5.4-company/doc_images/admin_user.png)
 
 - 运营模块
-![后台运营模块](laravel5.8-blog/doc_images/admin_article.png)
+![后台运营模块](laravel5.4-company/doc_images/admin_article.png)
 
 - 系统模块
-![后台系统模块](laravel5.8-blog/doc_images/admin_role.png)
+![后台系统模块](laravel5.4-company/doc_images/admin_role.png)
 
