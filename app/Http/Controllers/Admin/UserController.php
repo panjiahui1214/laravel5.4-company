@@ -7,9 +7,7 @@ use App\Models\User;
 use App\Models\UsersProfile;
 use App\Http\Requests\MobileRequest;
 use App\Http\Requests\UserNameRequest;
-use App\Http\Requests\PasswordRequest;
 use App\Http\Requests\EmailAndRemarkRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class UserController extends BaseController
 {

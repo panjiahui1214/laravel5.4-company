@@ -15,6 +15,7 @@
 # 安装步骤
 - 下载本项目并解压
 - composer install
+- 创建数据库，并导入database目录下的menus and menus_ad.sql文件
 - 将.env.example复制为.env，并且更改.env中的数据库相关信息
 - php artisan key:generate（系统自动生成.env文件中的APP_KEY）
 - php artisan migrate（根据项目迁移文件创建项目所需数据库表）
@@ -28,7 +29,7 @@
 - 首页
 ![前台首页](./doc_images/index.png)
 
-- 产品服务（待增加内容，并且后台待增加产品上传功能）
+- 产品服务
 ![前台产品服务](./doc_images/product.png)
 
 - 创享课程

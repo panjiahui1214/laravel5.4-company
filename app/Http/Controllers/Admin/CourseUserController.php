@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\CoursesUser;
-use App\Http\Controllers\Admin\BaseController;
 
 class CourseUserController extends BaseController
 {

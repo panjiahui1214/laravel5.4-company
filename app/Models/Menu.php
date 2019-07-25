@@ -17,21 +17,21 @@ class Menu extends MenuBaseModel
     {
         return $this->where('sort1', $this->getMenuFromEname($ename)->sort1)
                     ->where('sort2', '<>', 0)
-                    ->orderBy('sort2', 'asc')
+                    ->orderBy('sort2')
                     ->get();
     }
 
     public function getFirstMenus()
     {
         return $this->where('sort2', 0)
-                    ->orderBy('sort1', 'asc')
+                    ->orderBy('sort1')
                     ->get();
     }
 
     public function getSameSort1Menus($ename)
     {
         return $this->where('sort1', $this->getMenuFromEname($ename)->sort1)
-                    ->orderBy('sort2', 'asc')
+                    ->orderBy('sort2')
                     ->get();
     }
 

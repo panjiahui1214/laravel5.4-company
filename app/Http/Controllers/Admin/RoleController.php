@@ -6,7 +6,6 @@ use Request;
 use App\Models\Admin;
 use App\Models\AdminsRole;
 use App\Http\Requests\RoleRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class RoleController extends BaseController
 {

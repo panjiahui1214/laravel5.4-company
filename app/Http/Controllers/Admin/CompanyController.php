@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin;
 use Request;
 use App\Models\Company;
 use App\Http\Requests\CompanyRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class CompanyController extends BaseController
 {

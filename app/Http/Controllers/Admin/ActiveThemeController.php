@@ -6,7 +6,6 @@ use Request;
 use App\Models\Active;
 use App\Models\ActivesTheme;
 use App\Http\Requests\ActiveThemeRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class ActiveThemeController extends BaseController
 {

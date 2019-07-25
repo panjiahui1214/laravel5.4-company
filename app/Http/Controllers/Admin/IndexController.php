@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use DB;
-use App\Http\Controllers\Admin\BaseController;
 
 class IndexController extends BaseController
 {

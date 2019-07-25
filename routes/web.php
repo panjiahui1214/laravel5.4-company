@@ -201,6 +201,19 @@ Route::group(['middleware' => ['auth:admin']], function() {
 
 		Route::get($href_course.'/delete/{id}', $ctl_course.'@del')->name('course_del');
 
+		// 产品管理
+		$href_product = $this->menusAd->getMenuFromEname('product')->href;
+		$ctl_product = 'Admin\ProductController';
+		Route::get($href_product, $ctl_product.'@index')->name('product');
+
+		Route::get($href_product.'/add', $ctl_product.'@addView')->name('product_add');
+		Route::post($href_product.'/add', $ctl_product.'@addPost');
+
+		Route::get($href_product.'/update/{id}', $ctl_product.'@updView')->name('product_upd');
+		Route::post($href_product.'/update/{id}', $ctl_product.'@updPost');
+
+		Route::get($href_product.'/delete/{id}', $ctl_product.'@del')->name('product_del');
+
 		// 报名管理
 		$ctl_course_user = 'Admin\CourseUserController';
 		Route::get($href_course.'/user/{id}', $ctl_course_user.'@index')->name('course_user');

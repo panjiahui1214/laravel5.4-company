@@ -29,6 +29,9 @@ class BaseController extends Controller
             'model_menu'    =>  $this->menu,
             'first_menus'	=>	$first_menus,
         ];
+
+        $this->image_name = time().rand(100000, 999999);
+        $this->image_path = 'uploads/image/'.date('Ymd');
     }
 
 

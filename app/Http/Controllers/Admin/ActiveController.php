@@ -7,7 +7,6 @@ use Validator;
 use App\Models\Active;
 use App\Models\ActivesTheme;
 use App\Http\Requests\ActiveRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class ActiveController extends BaseController
 {

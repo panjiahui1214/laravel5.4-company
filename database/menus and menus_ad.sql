@@ -11,7 +11,7 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping structure for table gxbre.menus
+-- Dumping structure for table pjh_company.menus
 CREATE TABLE IF NOT EXISTS `menus` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '唯一标识',
   `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '菜单中文名称',
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `menus` (
   UNIQUE KEY `isort` (`isort`)
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='菜单信息表';
 
--- Dumping data for table gxbre.menus: ~19 rows (approximately)
+-- Dumping data for table pjh_company.menus: ~19 rows (approximately)
 /*!40000 ALTER TABLE `menus` DISABLE KEYS */;
 INSERT INTO `menus` (`id`, `name`, `ename`, `ename2`, `sort1`, `sort2`, `isort`, `href`, `txt`, `etxt`, `img`, `text`, `image`, `keywords`, `description`) VALUES
 	(1, '产品服务', 'pro', 'Product Service', 1, 0, 1, '/product', NULL, NULL, 'dropbox', NULL, NULL, NULL, NULL),
@@ -58,7 +58,7 @@ INSERT INTO `menus` (`id`, `name`, `ename`, `ename2`, `sort1`, `sort2`, `isort`,
 	(33, '已结束活动', 'act_end', NULL, 5, 3, NULL, '/active/end', NULL, NULL, 'battery-empty', NULL, NULL, NULL, NULL);
 /*!40000 ALTER TABLE `menus` ENABLE KEYS */;
 
--- Dumping structure for table gxbre.menus_ad
+-- Dumping structure for table pjh_company.menus_ad
 CREATE TABLE IF NOT EXISTS `menus_ad` (
   `id` tinyint(11) NOT NULL AUTO_INCREMENT COMMENT '唯一标识',
   `name` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '菜单中文名称',
@@ -70,41 +70,28 @@ CREATE TABLE IF NOT EXISTS `menus_ad` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `sort` (`sort1`,`sort2`,`sort3`),
   UNIQUE KEY `menus_ad_ename_unique` (`ename`)
-) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='后台菜单信息表';
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='后台菜单信息表';
 
--- Dumping data for table gxbre.menus_ad: 30 rows
+-- Dumping data for table pjh_company.menus_ad: 17 rows
 /*!40000 ALTER TABLE `menus_ad` DISABLE KEYS */;
 INSERT INTO `menus_ad` (`id`, `name`, `ename`, `sort1`, `sort2`, `sort3`, `href`) VALUES
 	(1, '用户', NULL, 1, 0, 0, '/admin/usersManage'),
 	(2, '会员设置', NULL, 1, 1, 0, NULL),
 	(3, '会员管理', 'user', 1, 1, 1, '/admin/user/userSet/userManage'),
-	(4, '会员级别', NULL, 1, 1, 2, NULL),
-	(5, '微信', NULL, 2, 0, 0, NULL),
-	(6, '回复设置', NULL, 2, 1, 0, NULL),
-	(7, '自动回复', NULL, 2, 1, 1, NULL),
-	(8, '自定义菜单', NULL, 2, 1, 2, NULL),
-	(9, '核心设置', NULL, 2, 2, 0, NULL),
-	(10, '商城', NULL, 3, 0, 0, NULL),
-	(11, '运营', NULL, 4, 0, 0, '/admin/run'),
-	(12, '系统', NULL, 5, 0, 0, '/admin/system'),
-	(13, '接口管理', NULL, 2, 2, 1, NULL),
-	(14, '产品设置', NULL, 3, 1, 0, NULL),
-	(15, '分类管理', NULL, 3, 1, 1, NULL),
-	(16, '产品管理', NULL, 3, 1, 2, NULL),
-	(17, '订单设置', NULL, 3, 2, 0, NULL),
-	(18, '订单管理', NULL, 3, 2, 1, NULL),
-	(19, '发布设置', NULL, 4, 1, 0, NULL),
-	(20, '模块设置', NULL, 4, 2, 0, NULL),
-	(21, '文章管理', 'article', 4, 1, 1, '/admin/run/publishSet/articleManage'),
-	(22, '活动管理', 'active', 4, 1, 2, '/admin/run/publishSet/activeManage'),
-	(23, '课程管理', 'course', 4, 1, 3, '/admin/run/publishSet/courseManage'),
-	(24, '模型管理', NULL, 4, 1, 4, NULL),
-	(25, '广告位管理', 'advertise', 4, 2, 1, '/admin/run/publishSet/advertiseManage'),
-	(26, '公司信息管理', 'company', 4, 2, 2, '/admin/run/publishSet/companyManage'),
-	(27, '管理员设置', NULL, 5, 1, 0, NULL),
-	(28, '角色管理', 'role', 5, 1, 1, '/admin/system/adminSet/roleManage'),
-	(29, '管理员管理', 'admin', 5, 1, 2, '/admin/system/adminSet/adminManage'),
-	(31, '后台首页', 'index', 0, 0, 0, '/admin');
+	(4, '运营', NULL, 2, 0, 0, '/admin/run'),
+	(5, '系统', NULL, 3, 0, 0, '/admin/system'),
+	(6, '发布设置', NULL, 2, 1, 0, NULL),
+	(7, '模块设置', NULL, 2, 2, 0, NULL),
+	(8, '文章管理', 'article', 2, 1, 1, '/admin/run/publishSet/articleManage'),
+	(9, '活动管理', 'active', 2, 1, 2, '/admin/run/publishSet/activeManage'),
+	(10, '课程管理', 'course', 2, 1, 3, '/admin/run/publishSet/courseManage'),
+	(11, '产品管理', 'product', 2, 1, 4, '/admin/run/publishSet/productManage'),
+	(12, '广告位管理', 'advertise', 2, 2, 1, '/admin/run/publishSet/advertiseManage'),
+	(13, '公司信息管理', 'company', 2, 2, 2, '/admin/run/publishSet/companyManage'),
+	(14, '管理员设置', NULL, 3, 1, 0, NULL),
+	(15, '角色管理', 'role', 3, 1, 1, '/admin/system/adminSet/roleManage'),
+	(16, '管理员管理', 'admin', 3, 1, 2, '/admin/system/adminSet/adminManage'),
+	(17, '后台首页', 'index', 0, 0, 0, '/admin');
 /*!40000 ALTER TABLE `menus_ad` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

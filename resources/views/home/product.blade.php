@@ -64,7 +64,7 @@
 										</div>
 										<div class="product-intro">
 											<span>产品介绍：</span>
-											<div>{!! $product->text !!}</div>
+											<div>{{ $product->txt }}</div>
 											<i class="am-icon-tasks"></i>
 										</div>
 									</div>

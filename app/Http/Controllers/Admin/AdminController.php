@@ -5,10 +5,8 @@ namespace App\Http\Controllers\Admin;
 use Request;
 use App\Models\Admin;
 use App\Models\AdminsRole;
-use App\Http\Requests\ArticleRequest;
 use App\Http\Requests\AdminNameRequest;
 use App\Http\Requests\PasswordRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class AdminController extends BaseController
 {

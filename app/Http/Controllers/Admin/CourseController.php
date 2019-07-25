@@ -7,7 +7,6 @@ use Request;
 use Validator;
 use App\Models\Course;
 use App\Http\Requests\CourseRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class CourseController extends BaseController
 {

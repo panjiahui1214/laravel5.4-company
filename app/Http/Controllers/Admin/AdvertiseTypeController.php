@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Admin;
 
 use Request;
 use App\Models\AdvertisesType;
-use App\Http\Controllers\Admin\BaseController;
 
 class AdvertiseTypeController extends BaseController
 {

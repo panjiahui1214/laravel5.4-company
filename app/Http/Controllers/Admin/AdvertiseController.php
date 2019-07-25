@@ -6,7 +6,6 @@ use Request;
 use App\Models\Advertise;
 use App\Models\AdvertisesType;
 use App\Http\Requests\AdvertiseRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class AdvertiseController extends BaseController
 {
@@ -44,7 +43,7 @@ class AdvertiseController extends BaseController
     public function index($tpid)
     {
         $advs = Advertise::where('tpid', $tpid)
-                                ->orderBy('sort', 'asc')
+                                ->orderBy('sort')
                                 ->paginate(10);
 
         $view_para = array_add($this->view_para, 'advertises', $advs);

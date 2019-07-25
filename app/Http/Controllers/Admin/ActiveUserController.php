@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\ActivesUser;
-use App\Http\Controllers\Admin\BaseController;
 
 class ActiveUserController extends BaseController
 {

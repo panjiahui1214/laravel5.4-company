@@ -6,7 +6,6 @@ use Auth;
 use Request;
 use App\Models\Article;
 use App\Http\Requests\ArticleRequest;
-use App\Http\Controllers\Admin\BaseController;
 
 class ArticleController extends BaseController
 {
@@ -20,9 +19,6 @@ class ArticleController extends BaseController
     public function __construct()
     {
         parent::__construct($this->menu_name);
-
-        $this->cover_name = time().rand(100000, 999999);
-        $this->cover_path = 'uploads/image/'.date('Ymd');
     }
 
 
@@ -78,7 +74,7 @@ class ArticleController extends BaseController
             return redirect()->back()->with('errors_image', $errors_cover)->withInput();
         }
         
-        $path = $this->imageUpload($this->cover_name, $cover, $this->cover_path);
+        $path = $this->imageUpload($this->image_name, $cover, $this->image_path);
 
         $data = Request::except('cover');
         $data['cover'] = $path;
@@ -118,7 +114,7 @@ class ArticleController extends BaseController
                 return redirect()->back()->with('errors_image', $errors_cover)->withInput();
             }
             
-            $path = $this->imageUpload($this->cover_name, $cover, $this->cover_path);
+            $path = $this->imageUpload($this->image_name, $cover, $this->image_path);
             $article->cover = $path;
         }
 

@@ -21,8 +21,8 @@ class CreateProductsTable extends Migration
             $table->string('belong', 50)->comment('所属菜单id');
             $table->tinyInteger('sort')->comment('排序');
             $table->string('image')->comment('图片相对路径');
-            $table->string('href')->comment('购买链接');
-            $table->text('text')->comment('介绍');
+            $table->string('href', 100)->comment('购买地址')->nullable();
+            $table->string('txt')->comment('介绍');
             $table->timestamps();
         });
 

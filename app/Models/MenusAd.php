@@ -34,7 +34,7 @@ class MenusAd extends MenuBaseModel
                     ->where('sort3', 0)
                     ->where('sort1', '<>', 0)
                     ->whereNotNull('href')
-                    ->orderBy('sort1', 'asc')
+                    ->orderBy('sort1')
                     ->get();
     }
 
