@@ -5,6 +5,7 @@
 - 前台的前端使用了在网上找来的模板，该模板使用了layui框架，前台则是根据这个模板以及公司需求进行了改造。
 - 后台的前端全部为个人独立撰写。
 - 项目使用了laravel后端框架的5.4版本进行开发。
+- 网站前台为自适应式布局
 
 ——————————————————————————————
 # 要求环境
@@ -25,24 +26,24 @@
 
 ——————————————————————————————
 # 效果图
-### 前台
+### 前台PC端
 - 首页
-![前台首页](./doc_images/index.png)
+![前台PC端首页](./doc_images/index.png)
 
 - 产品服务
-![前台产品服务](./doc_images/product.png)
+![前台PC端产品服务](./doc_images/product.png)
 
 - 创享课程
-![前台创享课程](./doc_images/course.png)
+![前台PC端创享课程](./doc_images/course.png)
 
 - 新闻资讯
-![前台新闻资讯](./doc_images/new.png)
+![前台PC端新闻资讯](./doc_images/new.png)
 
 - 关于我们
-![前台关于我们](./doc_images/about.png)
+![前台PC端关于我们](./doc_images/about.png)
 
 - 活动报名
-![前台活动报名](./doc_images/active.png)
+![前台PC端活动报名](./doc_images/active.png)
 
 - 登录
 ![前台登录](./doc_images/login.png)
@@ -62,6 +63,24 @@
 - 会员中心安全中心页
 ![前台会员中心安全中心页](./doc_images/user_security.png)
 
+### 前台手机端
+- 首页
+![前台手机端首页](./doc_images/mobile_index.png)
+
+- 产品服务
+![前台手机端产品服务](./doc_images/mobile_product.png)
+
+- 创享课程
+![前台手机端创享课程](./doc_images/mobile_course.png)
+
+- 新闻资讯
+![前台手机端新闻资讯](./doc_images/mobile_new.png)
+
+- 关于我们
+![前台手机端关于我们](./doc_images/mobile_about.png)
+
+- 活动报名
+![前台手机端活动报名](./doc_images/mobile_active.png)
 
 ### 后台
 - 登录
