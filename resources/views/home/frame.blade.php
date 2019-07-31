@@ -103,7 +103,7 @@
         <li class="am-u-lg-4 am-u-md-4 am-u-sm-12 bre-wxgz">
           <div class="part-5-title bre-wxgz-txt">微信关注</div>
           <div class="part-5-words2">
-            <img src="{{ ($wechat = $model_company->getCompanyFromEname('wechat')) ? $wechat->image : '' }}" alt="微信二维码">
+            <img src="{{ ($wechat = $model_company->getCompanyFromEname('wechat')) ? asset($wechat->image) : '' }}" alt="微信二维码">
           </div>
         </li>
 
