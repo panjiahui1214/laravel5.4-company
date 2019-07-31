@@ -9,7 +9,7 @@
 
 ——————————————————————————————
 # 要求环境
-- 参考 https://laravelacademy.org/post/6665.html 中的“1、服务器要求”
+- 参考 https://laravelacademy.org/post/6665.html 中的 “1、服务器要求”
 - composer
 
 ——————————————————————————————
@@ -26,75 +26,9 @@
 
 ——————————————————————————————
 # 效果图
-### 前台PC端
-- 首页
-![前台PC端首页](./doc_images/index.png)
-
-- 产品服务
-![前台PC端产品服务](./doc_images/product.png)
-
-- 创享课程
-![前台PC端创享课程](./doc_images/course.png)
-
-- 新闻资讯
-![前台PC端新闻资讯](./doc_images/new.png)
-
-- 关于我们
-![前台PC端关于我们](./doc_images/about.png)
-
-- 活动报名
-![前台PC端活动报名](./doc_images/active.png)
-
-- 登录
-![前台登录](./doc_images/login.png)
-
-- 会员中心首页
-![前台会员中心](./doc_images/user.png)
-
-- 会员中心参与活动页
-![前台会员中心参与活动页](./doc_images/user_active.png)
-
-- 会员中心参加课程页
-![前台会员中心参加活动页](./doc_images/user_course.png)
-
-- 会员中心个人资料页
-![前台会员中心个人资料页](./doc_images/user_profile.png)
-
-- 会员中心安全中心页
-![前台会员中心安全中心页](./doc_images/user_security.png)
-
-### 前台手机端
-- 首页
-![前台手机端首页](./doc_images/mobile_index.png)
-
-- 产品服务
-![前台手机端产品服务](./doc_images/mobile_product.png)
-
-- 创享课程
-![前台手机端创享课程](./doc_images/mobile_course.png)
-
-- 新闻资讯
-![前台手机端新闻资讯](./doc_images/mobile_new.png)
-
-- 关于我们
-![前台手机端关于我们](./doc_images/mobile_about.png)
-
-- 活动报名
-![前台手机端活动报名](./doc_images/mobile_active.png)
-
-### 后台
-- 登录
-![后台登录](./doc_images/admin_login.png)
-
-- 首页
-![后台首页](./doc_images/admin_index.png)
-
-- 用户模块
-![后台用户模块](./doc_images/admin_user.png)
-
-- 运营模块
-![后台运营模块](./doc_images/admin_article.png)
-
-- 系统模块
-![后台系统模块](./doc_images/admin_role.png)
+- 存放在doc_images文件夹中
+- 分为三大部分
+        - 前台PC端效果：文件名无前缀
+        - 前台手机端效果：文件名以 “mobile_” 开头
+        - 后台效果：文件名以 “admin_” 开头
 
